@@ -57,11 +57,9 @@
                     </ul>  
                     @endforeach
                 </div>
-
                 <div class="chat-section">
                     <div class="chat-box">
-                        <div class="chat-input bg-success" id="chatInput" contenteditable="">
-
+                        <div class="chat-input text-primary" id="chatInput"  contenteditable="">
                         </div>
                     </div>
                 </div>
@@ -69,14 +67,14 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
 
 
         <script>
             $(function() {
                 let ip_address = '127.0.0.1';
                 let socket_port = '3000';
-                let socket = io(ip_address + ':' + socket_port);
+                let socket = io('localhost:3000');
                 let chatInput = $('#chatInput');
                 let fromName = $('#fromName').val();
                 let toName = $('#toName').val();

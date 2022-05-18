@@ -1,11 +1,9 @@
-@extends('layouts.app')
-
-@section('content')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Home') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,7 +17,7 @@
                         <thead>
                           <tr>
                             <th scope="col">S.No</th>
-                            <th scope="col">User Name</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Action</th>
                           </tr>
                         </thead>
@@ -41,4 +39,4 @@
         </div>
     </div>
 </div>
-@endsection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
