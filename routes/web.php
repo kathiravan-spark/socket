@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ChatController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +24,5 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/chat', function () {
-    return view('chat');})->name('chat');
-
-Route::post('/sendmessage', [ChatController::class, 'sendMessage'])->name('sendmessage');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/chat/{id}', [HomeController::class, 'chat'])->name('chat');

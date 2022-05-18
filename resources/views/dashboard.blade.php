@@ -14,10 +14,4 @@
             </div>
         </div>
     </div>
-    <div> 
-        <button> <a href="{{route('chat')}}">Chat</a></button>
-    </div>
-
-
-
 </x-app-layout>
